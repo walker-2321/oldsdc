@@ -701,52 +701,6 @@ body {
 
 .footer .social-link:is(:hover, :focus) { background-image: var(--gradient); }
 
-/*-----------------------------------*\
-#Appointment-Button
-\*-----------------------------------*/
-
-/* styles.css */
-
-/* Default styles for larger screens */
-/* Additional specificity to override Bootstrap styles */
-.custom-appointment-button {
-  position: fixed !important;
-  bottom: 20px !important;
-  right: 20px !important;
-  background: linear-gradient(135deg, #2E3192, #0071BC) !important;
-  color: #fff !important;
-  padding: 10px 10px !important;
-  border-radius: 5px !important;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
-  cursor: pointer !important;
-  z-index: 999 !important;
-  transition: background 0.3s ease-in-out !important;
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
-  text-align: center !important;
-  width: auto !important;
-  font-size: 12px !important;
-}
-
-.custom-appointment-button a {
-  text-decoration: none !important;
-  color: #fff !important;
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
-  text-align: center !important;
-}
-
-.custom-appointment-button i {
-  margin-bottom: 1px !important;
-}
-
-
-
-
-
-
 
 /*-----------------------------------*\
   #BACK TO TOP
