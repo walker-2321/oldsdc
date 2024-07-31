@@ -709,28 +709,28 @@ body {
 
 /* Default styles for larger screens */
 .appointment-button {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: linear-gradient(135deg, #2E3192, #0071BC);
-  color: #fff;
-  padding: 10px 40px;
-  border-radius: 5px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  z-index: 999;
-  transition: background 0.3s ease-in-out;
+  position: fixed; /* Keeps the button in a fixed position relative to the viewport */
+  bottom: 20px; /* 20px from the bottom of the viewport */
+  right: 20px; /* 20px from the right edge of the viewport */
+  background: linear-gradient(135deg, #2E3192, #0071BC); /* Gradient background */
+  color: #fff; /* Text color */
+  padding: 10px 20px; /* Padding around the text (adjusted for consistent size) */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  cursor: pointer; /* Pointer cursor on hover */
+  z-index: 999; /* Ensure it's above other content */
+  transition: background 0.3s ease-in-out; /* Smooth background transition */
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  width: 20px;
-  font-size: 5px;
+  font-size: 12px; /* Font size for the text */
+  width: auto; /* Allow width to be dynamic based on content */
 }
 
 .appointment-button a {
-  text-decoration: none;
-  color: #fff;
+  text-decoration: none; /* Remove underline from links */
+  color: #fff; /* Text color */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -738,17 +738,21 @@ body {
 }
 
 .appointment-button i {
-  margin-bottom: 2px;
+  margin-bottom: 2px; /* Spacing between icon and text */
 }
 
-  .appointment-button a {
-      font-size: 12px; /* Decreased font size for smaller screens */
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .appointment-button {
+    font-size: 10px; /* Slightly smaller font size for smaller screens */
+    padding: 8px 15px; /* Adjusted padding for smaller screens */
   }
-
+  
   .appointment-button i {
-      margin-bottom: 1px; /* Adjusted spacing between icon and text */
+    margin-bottom: 1px; /* Adjust spacing between icon and text for smaller screens */
   }
 }
+
 
 
 
