@@ -1303,12 +1303,15 @@ h2::after {
 	border: 1px solid #efefef;
 	border-radius: 10px;
 	margin-bottom: 15px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+	transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
 }
+
 .carousel .testimonial:hover {
 	transform: scale(1.05);
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	background: #4b89cf; /* Adjusted background color for hover effect */
 }
+
 .carousel .testimonial::after {
 	content: "";
 	width: 15px;
@@ -1321,6 +1324,10 @@ h2::after {
 	bottom: -8px;
 	left: 46px;
 	transform: rotateZ(-46deg);
+  transition: background 0.3s ease;
+}
+.carousel .testimonial:hover::after {
+	background: #4b89cf; /* Darker background color for the pseudo-element on hover */
 }
 .carousel .star-rating li {
 	padding: 0 2px;
